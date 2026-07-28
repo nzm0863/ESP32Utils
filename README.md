@@ -7,8 +7,6 @@ A utility library to simplify ESP32 development.
 
 - Wi-Fi接続 / Wi-Fi Connection
 
-> OTAは今後追加予定です。
-
 ---
 
 ## インストール / Installation
@@ -67,7 +65,7 @@ void loop() {
 ## 今後追加予定 / Roadmap
 
 - [x] Wi-Fi Manager
-- [ ] OTA Manager
+- [x] OTA Manager
 - [ ] LINE Manager
 - [ ] Discord Manager
 - [ ] MQTT Manager
