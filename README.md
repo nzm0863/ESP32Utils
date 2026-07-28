@@ -23,7 +23,7 @@ Documents/Arduino/libraries/ESP32Utils
 
 ## 使い方 / Usage
 
-### 1. `wifi_config.example.h` を `wifi_config.h` にコピーします。
+### 1. `wifi_config.example.h` を `wifi_config.h` という名前でコピーします。
 
 ```cpp
 #pragma once
