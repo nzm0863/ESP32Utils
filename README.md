@@ -62,6 +62,9 @@ void loop() {
 
 ---
 
+## 解説動画
+https://youtube.com/shorts/aXVLTQwZH1s?feature=share
+
 ## 今後追加予定 / Roadmap
 
 - [x] Wi-Fi Manager

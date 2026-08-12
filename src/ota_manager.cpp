@@ -1,7 +1,14 @@
 #include "ota_manager.h"
 #include <ArduinoOTA.h>
+#include <ESPmDNS.h>
 
 void otaSetup(const char* hostname) {
+  if (MDNS.begin(hostname)) {
+    Serial.printf("mDNS started: %s.local\n", hostname);
+  } else {
+    Serial.println("mDNS failed");
+  }
+
   ArduinoOTA.setHostname(hostname);
 
   ArduinoOTA.onStart([hostname]() {
@@ -21,8 +28,4 @@ void otaSetup(const char* hostname) {
   });
 
   ArduinoOTA.begin();
-}
-
-void otaHandle() {
-  ArduinoOTA.handle();
 }
